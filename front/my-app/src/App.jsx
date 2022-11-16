@@ -2,13 +2,12 @@ import React, { Component } from "react"
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import NotFound from "./components/NotFound.jsx";
-import './resources/css/menu.css';
+import './resource/css/menu.css';
 
 export default class App extends Component {
-
-    
     constructor(props) {
         super(props);
+        this.props = props;
     }
     
     printUUID=()=>{
